@@ -20,8 +20,11 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
 
+    - name: Grant execute permission for gradle-wrapper.jar
+      run: chmod +x gradle/wrapper/gradle-wrapper.jar
+
     - name: Build with Gradle
-      run: ./gradlew assembleDebug  # Debug APK için, release için assembleRelease kullan
+      run: ./gradlew assembleDebug
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
