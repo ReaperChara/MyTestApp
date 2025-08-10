@@ -1,2 +1,2 @@
 # MyTestApp
-I Just Testing
+I Just Testing.
